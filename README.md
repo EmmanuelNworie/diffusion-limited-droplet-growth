@@ -1,59 +1,53 @@
-# Diffusion-Limited Lipid Droplet Growth
+# Diffusion-Limited Droplet Growth
 
-This repository contains a numerical simulation of diffusion-limited lipid droplet growth.
+This repository contains a scientific computing project on diffusion-limited lipid droplet growth.
 
-The model describes lipid transport in the endoplasmic reticulum (ER) membrane and the resulting growth of lipid droplets attached to the membrane.
+The goal is to model how lipid concentration evolves in time and how a droplet grows by absorbing material from its surrounding environment. The project is motivated by transport processes in biological systems, especially lipid droplet growth associated with the endoplasmic reticulum.
 
-The simulation combines:
+## Project Overview
 
-• diffusion PDE modeling  
-• finite element discretization  
-• numerical time stepping  
-• scientific visualization  
+This project demonstrates:
 
----
+- diffusion-based mathematical modeling
+- numerical simulation in Python
+- scientific visualization
+- reproducible computational workflow
 
-## Mathematical Model
+## Mathematical Idea
 
-Lipid concentration evolves according to the diffusion equation
+A concentration field \( c(x,y,t) \) evolves by diffusion and is depleted at the droplet boundary. A simplified governing model is
 
-∂c/∂t = D ∇²c  +Q
+\[
+\frac{\partial c}{\partial t} = D \nabla^2 c
+\]
 
-with absorbing boundary conditions at the droplet surface.
+where:
 
-The droplet radius evolves according to the diffusive flux into the droplet.
+- \( c(x,y,t) \) is the concentration
+- \( D \) is the diffusion coefficient
 
----
-
-## Methods
-
-The simulation uses:
-
-• Python  
-• NumPy / SciPy  
-• finite element mesh generation  
-• numerical PDE solvers  
-
----
-
-##  Output
-
-• concentration fields around droplets  
-• droplet growth curves  
-• comparison with theoretical scaling laws  
-
----
+The droplet radius changes in time according to the flux absorbed at the droplet interface.
 
 ## Repository Structure
 
-src/        simulation code  
-notebooks/  analysis notebooks  
-figures/    simulation results  
+- `src/` — simulation scripts
+- `notebooks/` — exploratory analysis and visualization
+- `figures/` — output plots
+- `data/` — input or processed data files
 
----
+## Current Status
+
+This repository is being organized into a clean public portfolio version of a broader research workflow in scientific computing and diffusion-driven transport modeling.
+
+## Tools Used
+
+- Python
+- NumPy
+- Matplotlib
+- Jupyter Notebook
 
 ## Author
 
-Emmanuel Nworie  
-PhD Candidate:Computational & Applied Mathematics  
-Southern Methodist University.
+**Emmanuel Nworie**  
+PhD Candidate, Computational & Applied Mathematics  
+Southern Methodist University
