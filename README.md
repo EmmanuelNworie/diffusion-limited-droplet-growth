@@ -18,7 +18,7 @@ This project demonstrates:
 A concentration field \( c(x,y,t) \) evolves by diffusion and is depleted at the droplet boundary. A simplified governing model is
 
 \[
-\frac{\partial c}{\partial t} = D \nabla^2 c
+\frac{\partial c}{\partial t} = D \nabla^2 c+Q
 \]
 
 where:
