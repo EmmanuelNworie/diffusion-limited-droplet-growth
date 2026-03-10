@@ -55,5 +55,5 @@ figures/    simulation results
 ## Author
 
 Emmanuel Nworie  
-PhD Candidate — Computational & Applied Mathematics  
+PhD Candidate:Computational & Applied Mathematics  
 Southern Methodist University.
