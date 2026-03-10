@@ -1,1 +1,3 @@
-This folder stores simulation plots.
+
+
+![Droplet Growth](figures/droplet_growth_curve.png)
